@@ -1,0 +1,16 @@
+body {
+  font-family: work-sans, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+  margin: 0;
+}
+
+h1 {
+  color: #333;
+}
+
+nav a {
+  color: #0066cc;
+  text-decoration: none;
+  margin-right: 8px;
+}
