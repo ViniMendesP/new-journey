@@ -153,6 +153,41 @@ article{
   gap: 2rem;
 }
 
+.hero{
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-bg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(4);
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.hero-paragraph-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  gap: 2rem;
+}
+
+.p_hero{
+  font-size: var(--font-size-lg);
+}
+
+.text-highlight{
+  color: var(--highlight-color);
+}
+
 .text-center{
   text-align: center;
 }

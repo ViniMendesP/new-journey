@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/dzp7wxo.css">
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"></script>
+    <script nomodule src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
+
     <title>Vinícius Mendes Pinheiro</title>
     
     
@@ -29,14 +32,30 @@
         </header>
         
         <main>
-            <section id="sobre">
+
+            <dotlottie-player
+                src="https://lottie.host/4f82ad87-7a89-434d-9036-ced32cf3728d/nZagiS8VsC.lottie"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px"
+                loop
+                autoplay
+                class="hero-bg">
+            </dotlottie-player>
+            
+            <section id="sobre" class="hero">
 
                 <div class="content-wrapper">
                     
-                    <h1 class="text-center">Product Designer em uma nova jornada</h1>
-                    <p class="text-center">Sou um Product Designer, atualmente trabalho na Ambev e sempre tive vontade de aprender skills de desenvolvimento para poder construir ideias e atuar por conta própria em projetos. A ideia é aprender o suficiente para poder testar ideias, validar hipóteses e criar protótipos funcionais.</p>
+                    <h1 class="text-center"><span class="text-highlight">Product Designer</span> em uma nova jornada</h1>
 
-                    <p class="text-center">Esse site é um grande experimento, talvez um dia venha a ser meu verdadeiro portfólio, mas ainda é apenas um sonho de algo que gostaria de fazer com as próprias mãos.</p>
+                    <div class="hero-paragraph-wrapper">
+                        
+                        <p class="text-center p_hero">Sou um Product Designer, atualmente trabalho na Ambev e sempre tive vontade de aprender skills de desenvolvimento para poder construir ideias e atuar por conta própria em projetos. A ideia é aprender o suficiente para poder testar ideias, validar hipóteses e criar protótipos funcionais.</p>
+
+                        <p class="text-center p_hero">Esse site é um grande experimento, talvez um dia venha a ser meu verdadeiro portfólio, mas ainda é apenas um sonho de algo que gostaria de fazer com as próprias mãos.</p>
+
+                    </div>
 
                 </div>
 
