@@ -232,9 +232,36 @@ article{
 }
 
 .about-wrapper{
-  max-width: 800px;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.about-text-block{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 24px;
+}
+
+.about-picture-container{
+  width: 100%;
+  max-height: 640px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--border-color-primary);
+}
+
+.about-img{
+  width: 100%;
+  object-fit: cover;
+  object-position: 50%;
+}
+
+.about-paragraph{
+  font-size: var(--font-size-lg);
 }
 
 .text-highlight{
