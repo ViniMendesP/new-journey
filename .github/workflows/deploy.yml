@@ -6,19 +6,18 @@ on:
       - main
 
 jobs:
-  deploy:
+  ftp-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Deploy to Hostinger via FTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          port: 21
-          sftp_only: false
-          local_path: "./"
-          remote_path: "public_html"
+          server-dir: public_html/
+          local-dir: ./
+          protocol: ftp
